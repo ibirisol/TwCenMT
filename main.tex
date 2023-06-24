@@ -1,0 +1,23 @@
+% This example demonstrates adding a custom TrueType font
+% to your Overleaf project. The custom font is Delphine, 
+% which was sourced from https://sjfonts.sourceforge.net
+
+\documentclass{article}
+\usepackage[T1]{fontenc} 
+\usepackage{twcenmt}
+
+\title{Example: Using Tw Cen MT TrueType Font}
+\author{Ibirisol Fontes Ferreira}
+
+\begin{document}
+\maketitle
+
+Normal Font Text.
+
+\Huge\TwCenMT{Custom \textbf{Tw Cent TM} Text! À Á Â Ä Å á â ã ä å è é ê ë È É Ê Ë Ò Ó Ô Õ Ö with {\TwCenMTbd{Bold!}}}
+
+\Huge\TwCenMTit{Custom \textbf{Tw Cent TM Italic} Text! À Á Â Ä Å á â ã ä å è é ê ë È É Ê Ë Ò Ó Ô Õ Ö with \TwCenMTitbd{Bold!}}
+
+\Huge\TwCenMTCond{Custom {\TwCenMTCondbd{Tw Cent TM Condensed}} Text! À Á Â Ä Å á â ã ä å è é ê ë È É Ê Ë Ò Ó Ô Õ Ö with {\TwCenMTCondExtbd{Condensed Extra Bold}}!}
+
+\end{document}
